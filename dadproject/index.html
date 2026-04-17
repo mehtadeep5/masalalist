@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murlidhar Caterers Order System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>મુરલીધર કેટરર્સ</h1>
+            <p>કકુભાઈ મહારાજ: 8849637977</p>
+        </header>
+
+        <section class="order-form" id="headerForm">
+            </section>
+
+        <div class="sticky-controls">
+            <input type="text" id="searchInput" placeholder="વસ્તુ શોધો (Search items...)" onkeyup="filterItems()">
+            <button class="btn-pdf" onclick="generatePDF()">Download PDF</button>
+        </div>
+
+        <div id="itemList" class="grid-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
